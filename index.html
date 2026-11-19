@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NASJ · نَسْج Skills Ecosystem</title>
+<meta name="description" content="NASJ connects students, professors, professionals, clubs and companies around skills proven with evidence.">
+<meta name="theme-color" content="#0A0A0C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300..800&family=Instrument+Serif:ital@0;1&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&family=Reem+Kufi:wght@500..700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="min-h-full">
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ================= LANDING (English) ================= -->
+<div id="landing" dir="ltr" lang="en">
+  <header class="land-nav">
+    <div class="mx-auto max-w-[1280px] px-4 md:px-8 h-16 md:h-20 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3" aria-label="NASJ home">
+        <span class="logo-ar text-[28px] text-gold" lang="ar">نَسْج</span>
+        <span class="latin text-[10px] text-ink2">NASJ</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-1 text-sm text-ink2">
+        <a class="btn btn-ghost btn-sm" href="#journey" data-scroll="journey">Journey</a>
+        <a class="btn btn-ghost btn-sm" href="#roles" data-scroll="roles">Roles</a>
+        <a class="btn btn-ghost btn-sm" href="#passport" data-scroll="passport">Skill Passport</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="#student-overview">Open the demo <i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </header>
+
+  <section class="net" id="top" aria-label="Introduction">
+    <canvas id="netCanvas" aria-hidden="true"></canvas>
+    <div class="net-layer" id="netLayer" aria-hidden="true"></div>
+    <div class="net-fade"></div>
+    <div class="net-copy">
+      <div class="mx-auto max-w-[1280px] px-4 md:px-8">
+        <p class="eyebrow mb-6"><span class="kicker-gold">نَسْج</span> &nbsp;·&nbsp; skills, woven from evidence</p>
+        <h1 class="split display text-[clamp(50px,9.4vw,148px)] leading-[.9] max-w-[9ch]" data-accent="prove.">Skills you can prove.</h1>
+        <p class="mt-7 max-w-[44ch] text-ink2 text-[clamp(15px,1.5vw,18px)] leading-relaxed">One platform where students, professors, professionals, clubs and companies meet around a single rule: a skill counts when the work shows it.</p>
+        <div class="mt-8 flex flex-wrap gap-3 pe">
+          <a class="btn btn-primary btn-lg" href="#student-overview">Open the live demo <i data-lucide="arrow-right"></i></a>
+          <button class="btn btn-lg" data-scroll="hero"><i data-lucide="mouse-pointer-2"></i> Scroll to weave</button>
+        </div>
+        <div class="mt-8 net-legend">
+          <span><i class="inline-block w-2.5 h-2.5 rounded-full" style="background:#8C9BFF;box-shadow:0 0 10px #8C9BFF"></i>Skill</span>
+          <span><i class="inline-block w-3 h-3 rounded-[4px] border-[1.5px]" style="border-color:#F0A35E"></i>Evidence</span>
+          <span><i data-lucide="badge-check" class="w-3.5 h-3.5 text-gold"></i>Verified match</span>
+          <span class="hidden md:inline-flex text-ink2">Click the field to connect a skill</span>
+        </div>
+        <p class="mt-4 text-xs text-muted flex flex-wrap gap-x-2">The product demo runs in Arabic <span aria-hidden="true">·</span> <span lang="ar" dir="rtl" class="logo-ar text-[13px]">العرض التجريبي بالعربية</span></p>
+      </div>
+    </div>
+    <div class="scroll-hint absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-muted">
+      <span class="mono text-[10px] tracking-[.25em]">SCROLL</span>
+      <span class="block w-px h-10 bg-gradient-to-b from-[var(--gold)] to-transparent"></span>
+    </div>
+  </section>
+
+  <section class="hero" id="hero" aria-label="From activity to proof">
+    <canvas id="weave" aria-hidden="true"></canvas>
+    <div class="hero-vignette"></div>
+
+    <div class="beat beat-2 bottom-[14%]">
+      <div class="mx-auto max-w-[1280px] px-4 md:px-8 flex justify-end">
+        <div class="max-w-[16ch] text-right">
+          <p class="eyebrow mb-3">01 &nbsp;Threads</p>
+          <h2 class="display text-[clamp(38px,5.6vw,84px)] leading-[.95]">Every activity is a <em class="text-gold">thread.</em></h2>
+          <p class="mt-4 text-ink2">Courses, challenges, hackathons, club work, mentorship.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="beat beat-3 top-[18%]">
+      <div class="mx-auto max-w-[1280px] px-4 md:px-8">
+        <p class="eyebrow mb-3">02 &nbsp;Weave</p>
+        <h2 class="display text-[clamp(38px,5.6vw,84px)] leading-[.95] max-w-[13ch]">Assessed, evaluated, <em class="text-gold">woven together.</em></h2>
+      </div>
+    </div>
+
+    <div class="beat beat-4 top-1/2 -translate-y-1/2 text-center">
+      <div class="mx-auto max-w-[1280px] px-4 md:px-8">
+        <p class="eyebrow mb-4">03 &nbsp;Proof</p>
+        <h2 class="display text-[clamp(44px,7.6vw,116px)] leading-[.92]">One passport<br>employers <em class="text-gold">trust.</em></h2>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- gap -->
+  <section class="relative mx-auto max-w-[1280px] px-4 md:px-8 py-24 md:py-36">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <p class="eyebrow mb-4">The gap</p>
+        <h2 class="display text-[clamp(38px,4.8vw,68px)] leading-[1]">Talent is everywhere. <em class="text-gold">Proof</em> of it is not.</h2>
+      </div>
+      <div class="md:col-span-7 grid sm:grid-cols-2 gap-3" data-stagger>
+        <div class="card card-pad"><i data-lucide="graduation-cap" class="w-5 h-5 text-gold"></i><p class="mt-4 font-medium">Students</p><p class="mt-1 text-sm text-ink2 leading-relaxed">Collect certificates and club hours that never show what they actually did.</p></div>
+        <div class="card card-pad"><i data-lucide="building-2" class="w-5 h-5 text-gold"></i><p class="mt-4 font-medium">Companies</p><p class="mt-1 text-sm text-ink2 leading-relaxed">Screen CVs that all read the same, with no way to see real work.</p></div>
+        <div class="card card-pad"><i data-lucide="book-open" class="w-5 h-5 text-gold"></i><p class="mt-4 font-medium">Professors</p><p class="mt-1 text-sm text-ink2 leading-relaxed">Teach strong theory, with few links to the problems industry is solving now.</p></div>
+        <div class="card card-pad"><i data-lucide="briefcase" class="w-5 h-5 text-gold"></i><p class="mt-4 font-medium">Graduates &amp; professionals</p><p class="mt-1 text-sm text-ink2 leading-relaxed">Hold the market knowledge students need, with no channel to pass it on.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- journey -->
+  <section id="journey" class="relative mx-auto max-w-[1280px] px-4 md:px-8 py-16 md:py-28">
+    <p class="eyebrow mb-4">The journey</p>
+    <h2 class="display text-[clamp(38px,4.8vw,68px)] leading-[1] max-w-[16ch]">Six steps from interest to being <em class="text-gold">found.</em></h2>
+    <div class="relative mt-14">
+      <svg class="absolute left-0 right-0 top-[23px] w-full h-[2px] hidden md:block" viewBox="0 0 1000 2" preserveAspectRatio="none" aria-hidden="true"><line class="journey-line" x1="0" y1="1" x2="1000" y2="1" stroke="var(--gold)" stroke-width="2" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0"></line></svg>
+      <ol class="grid grid-cols-2 md:grid-cols-6 gap-x-4 gap-y-10 relative" data-stagger>
+        <li><span class="node done"><i data-lucide="compass"></i></span><p class="mt-4 mono text-[11px] text-gold tracking-widest">DISCOVER</p><p class="mt-1 text-sm text-ink2">See which skills the market asks for right now.</p></li>
+        <li><span class="node done"><i data-lucide="book-marked"></i></span><p class="mt-4 mono text-[11px] text-gold tracking-widest">LEARN</p><p class="mt-1 text-sm text-ink2">Follow a path built from your measured level.</p></li>
+        <li><span class="node done"><i data-lucide="hammer"></i></span><p class="mt-4 mono text-[11px] text-gold tracking-widest">PRACTICE</p><p class="mt-1 text-sm text-ink2">Solve real company challenges and hackathon briefs.</p></li>
+        <li><span class="node done"><i data-lucide="clipboard-check"></i></span><p class="mt-4 mono text-[11px] text-gold tracking-widest">GET EVALUATED</p><p class="mt-1 text-sm text-ink2">Professors and professionals score work on rubrics.</p></li>
+        <li><span class="node done"><i data-lucide="badge-check"></i></span><p class="mt-4 mono text-[11px] text-gold tracking-widest">VERIFY</p><p class="mt-1 text-sm text-ink2">Evidence from independent sources seals the skill.</p></li>
+        <li><span class="node now"><i data-lucide="radar"></i></span><p class="mt-4 mono text-[11px] text-gold tracking-widest">GET DISCOVERED</p><p class="mt-1 text-sm text-ink2">Companies search verified passports, not CVs.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- roles -->
+  <section id="roles" class="relative mx-auto max-w-[1280px] px-4 md:px-8 py-16 md:py-28">
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <div>
+        <p class="eyebrow mb-4">One ecosystem, five experiences</p>
+        <h2 class="display text-[clamp(38px,4.8vw,68px)] leading-[1] max-w-[14ch]">Pick a seat at the <em class="text-gold">loom.</em></h2>
+      </div>
+      <p class="text-ink2 max-w-[40ch]">Each role has its own dashboard, navigation and tools. The demo switches between them without signing in. The workspace itself is in Arabic.</p>
+    </div>
+    <div class="mt-12 grid md:grid-cols-6 gap-3" id="roleBento" data-stagger></div>
+  </section>
+
+  <!-- verification -->
+  <section id="passport" class="relative mx-auto max-w-[1280px] px-4 md:px-8 py-16 md:py-28">
+    <div class="grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5">
+        <p class="eyebrow mb-4">The Skill Passport</p>
+        <h2 class="display text-[clamp(38px,4.8vw,68px)] leading-[1]">Claimed is not the same as <em class="text-gold">proven.</em></h2>
+        <p class="mt-5 text-ink2 leading-relaxed max-w-[44ch]">Every skill climbs four states. Each step needs something real: a practical assessment, a qualified evaluator, evidence from more than one source. Attendance certificates stay on record, and never count as proof by themselves.</p>
+        <a href="#student-passport" class="btn btn-primary btn-lg mt-8">Open Reem&rsquo;s passport <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="lg:col-span-7 grid gap-3" id="ladder" data-stagger></div>
+    </div>
+  </section>
+
+  <footer class="mx-auto max-w-[1280px] px-4 md:px-8 py-12 border-t hair flex flex-wrap gap-4 items-center justify-between text-sm text-muted">
+    <div class="flex items-center gap-3"><span class="logo-ar text-xl text-gold" lang="ar">نَسْج</span><span>Skills &amp; career development ecosystem</span></div>
+    <span class="demo-flag">Demo build · all people and organisations are fictional</span>
+  </footer>
+</div>
+
+<!-- ================= التطبيق ================= -->
+<div id="app" class="app" dir="rtl" lang="ar" hidden>
+  <aside class="side" id="side" aria-label="التنقل الرئيسي">
+    <div class="h-16 px-5 flex items-center justify-between border-b hair">
+      <a href="#home" class="flex items-center gap-3" aria-label="العودة للمقدمة">
+        <span class="logo-ar text-[26px] text-gold">نَسْج</span>
+        <span class="latin text-[10px] text-ink2" dir="ltr">NASJ</span>
+      </a>
+      <button class="btn btn-ghost btn-icon btn-sm lg:hidden" data-act="closeSide" aria-label="إغلاق القائمة"><i data-lucide="x"></i></button>
+    </div>
+    <div class="px-3 pt-4" id="sideRole"></div>
+    <nav class="flex-1 overflow-y-auto px-3 py-3 no-scrollbar" id="sideNav"></nav>
+    <div class="p-3 border-t hair" id="sideFoot"></div>
+  </aside>
+  <div class="scrim" id="scrim" data-act="closeSide"></div>
+
+  <div class="min-w-0 flex flex-col">
+    <header class="topbar">
+      <div class="h-16 px-4 md:px-8 flex items-center gap-3">
+        <button class="btn btn-ghost btn-icon lg:hidden" data-act="openSide" aria-label="فتح القائمة"><i data-lucide="menu"></i></button>
+        <div class="min-w-0 flex-1">
+          <p class="eyebrow truncate leading-tight" id="crumbRole">طالب</p>
+          <p class="text-[15px] font-semibold truncate leading-tight mt-0.5" id="crumbPage">نظرة عامة</p>
+        </div>
+        <span class="demo-flag hidden md:inline-block">وضع التجربة</span>
+        <button class="btn btn-ghost btn-icon" data-act="toggleSound" id="soundBtn" aria-label="تشغيل أو إيقاف أصوات الواجهة" data-tip="أصوات الواجهة"><i data-lucide="volume-2"></i></button>
+        <button class="btn btn-ghost btn-icon relative" data-act="notifs" aria-label="الإشعارات" data-tip="الإشعارات"><i data-lucide="bell"></i><span class="absolute top-2 left-2.5 w-1.5 h-1.5 rounded-full bg-[var(--gold)]"></span></button>
+        <div class="relative" id="roleWrap">
+          <button class="btn h-11 ps-1.5 pe-3 gap-2.5 rounded-full" data-act="toggleMega" aria-haspopup="true" aria-expanded="false" id="roleBtn"></button>
+          <div class="mega" id="mega" role="menu"></div>
+        </div>
+      </div>
+    </header>
+    <main id="main" class="flex-1 px-4 md:px-8 py-6 md:py-8 mx-auto w-full max-w-[1400px]" tabindex="-1"></main>
+  </div>
+</div>
+
+<div class="overlay" id="overlay" dir="rtl" lang="ar" aria-hidden="true"><div class="dialog" id="dialog" role="dialog" aria-modal="true"></div></div>
+<div class="toasts" id="toasts" dir="rtl" lang="ar" aria-live="polite"></div>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/views-student.js"></script>
+<script src="js/views-roles.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
